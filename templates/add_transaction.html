@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Transaction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Add Transaction</h1>
+        <form method="POST" action="{{ url_for('add_transaction') }}">
+            {{ form.hidden_tag() }}
+            <div>
+                {{ form.amount.label }}<br>
+                {{ form.amount(size=32) }}<br>
+                {% for error in form.amount.errors %}
+                    <span class="error">{{ error }}</span>
+                {% endfor %}
+            </div>
+            <div>
+                {{ form.category.label }}<br>
+                {{ form.category(size=32) }}<br>
+                {% for error in form.category.errors %}
+                    <span class="error">{{ error }}</span>
+                {% endfor %}
+            </div>
+            <div>
+                {{ form.date.label }}<br>
+                {{ form.date() }}<br>
+                {% for error in form.date.errors %}
+                    <span class="error">{{ error }}</span>
+                {% endfor %}
+            </div>
+            <div>
+                {{ form.submit() }}
+            </div>
+        </form>
+    </div>
+</body>
+</html>
