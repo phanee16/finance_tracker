@@ -22,6 +22,22 @@ Creating a website for a graduate project that incorporates HTML, CSS, JavaScrip
 - **Streamlit:**
   - Create an interactive dashboard for visualizing financial data.
 
+### personal_finance_tracker/
+├── app.py
+├── templates/
+│ ├── index.html
+│ ├── add_transaction.html
+│ └── report.html
+├── static/
+│ ├── css/
+│ │ └── styles.css
+│ └── js/
+│ └── scripts.js
+├── models.py
+├── forms.py
+├── database.db
+└── streamlit_app.py
+
 ## Step-by-Step Guide
 
 ### 1. Set Up Your Environment
