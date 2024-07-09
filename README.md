@@ -56,7 +56,7 @@ Creating a website for a graduate project that incorporates HTML, CSS, JavaScrip
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your_username/personal_finance_tracker.git
+   git clone https://github.com/phanee16/finance_tracker.git
    cd personal_finance_tracker
 
 2. **Install Required Libraries:**
@@ -71,7 +71,4 @@ Creating a website for a graduate project that incorporates HTML, CSS, JavaScrip
 4. **Run the Streamlit dashboard:**
     ```bash
     streamlit run streamlit_app.py
-
-
-
 
